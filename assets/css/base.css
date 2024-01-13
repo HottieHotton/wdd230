@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #6487e9; /* Set your background color */
+    color: #333; /* Set your text color */
+    margin: 0;
+}
+
+header, nav, main, footer {
+    max-width: 800px; /* Set your preferred maximum width */
+    margin: 0 auto; /* Center the elements horizontally */
+}
+
+header {
+    text-align: center;
+    background-color: #78828f; /* Set your header background color */
+    color: #fff; /* Set your header text color */
+}
+
+nav {
+    display: grid;
+    gap: 10px; /* Set the gap between navigation links */
+    background-color: #333; /* Set your navigation background color */
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Set your navigation link color */
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+main h2{
+    text-align: center;
+}
+
+main h3 {
+    text-align: center;
+}
+
+.card{
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card {
+    background-color: #fff; /* Set your card background color */
+    border: 1px solid #ddd; /* Set your card border color */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Add any additional styling as needed */
+
+footer {
+    text-align: center;
+    background-color: #333; /* Set your footer background color */
+    color: #fff; /* Set your footer text color */
+    padding: 10px;
+}
