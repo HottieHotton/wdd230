@@ -2,6 +2,11 @@
     body {
       background-color: #a4b3f7;
     }
+
+    header img{
+        width:25%;
+        height:25%;
+    }
   
     nav {
       display: flex;
