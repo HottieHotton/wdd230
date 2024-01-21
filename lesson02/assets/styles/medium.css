@@ -1,0 +1,9 @@
+@media screen and (min-width: 480px) and (max-width: 599px){
+    .main-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card:nth-child(3n){
+        grid-column: 1/span 2; /* Make all cards span two columns */
+    }
+}
