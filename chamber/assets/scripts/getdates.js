@@ -14,7 +14,7 @@ const lastModified = document.lastModified;
 
 //Apply Copyright symbol and current year
 document.getElementById('copyright').innerHTML = `&copy; ${currentYear}<br>Braxton Hotton<br>Utah, USA
-<br>Questions? Email me: <a href="mailto:bhotton25@gmail.com">bhotton25@gmail.com</a>`;
+<br>Questions? Email me: <a href="mailto:bhotton25@gmail.com" style="color: white;">bhotton25@gmail.com</a>`;
 
 //Apply last modified to website
 document.getElementById('lastModified').innerHTML = `Last Modified: ${lastModified}<br>This website is a project for my WDD230 BYU-Idaho Class`
