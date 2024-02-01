@@ -62,4 +62,9 @@ footer{
     background-color: #03254E;
     color: white;
     padding: 10px;
+    text-decoration: none;
+}
+
+footer p a{
+    color: white;
 }
