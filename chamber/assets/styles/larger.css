@@ -1,0 +1,46 @@
+@media screen and (min-width: 600px) {
+    
+    header, nav, main, footer{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 0;
+      align-items: center;
+    }
+
+    nav a {
+      display: block;
+      flex: 1 1 100%;
+      padding: 10px;
+    }
+
+    nav a:hover{
+        background-color: lightgray;
+    }
+
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+
+    header{
+        background-color: #03254E;
+        color: white;
+    }
+    
+    main{
+        background-color: #06ADEF;
+        flex-direction: column;
+    }
+    
+    footer{
+        flex-direction: column;
+        background-color: #03254E;
+        color: white;
+    }
+  }
