@@ -1,6 +1,6 @@
 @media screen and (min-width: 600px) {
     
-    header, nav, main, footer{
+    header, nav, footer{
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -32,15 +32,70 @@
         background-color: #03254E;
         color: white;
     }
+
+    .block {
+        display: block;
+        border: none;
+        background-color: #06ADEF;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+    }
     
     main{
         background-color: #06ADEF;
         flex-direction: column;
+        display: grid;
+    }
+
+    .coa {
+        background-color: white;
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .boxes div{
+        background-color: white;
+        border: solid 1px black;
+    }
+
+    .weather{
+        margin-bottom: 20px;
+    }
+
+    .events {
+        grid-column: 1/-1;
+        background-color: white;
+        border: solid 1px black;
+    }
+
+    .hero img {
+        width: 75%;
+        height: auto;
     }
     
     footer{
         flex-direction: column;
         background-color: #03254E;
         color: white;
+    }
+
+    #mode {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+        font-size: 3rem;
+        cursor: pointer;
+        font-size: 2rem;
     }
   }
