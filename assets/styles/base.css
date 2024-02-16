@@ -75,6 +75,36 @@ main {
     padding: 20px;
 }
 
+main picture img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero{
+    position: relative;
+}
+
+.herolabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: radial-gradient(#fff, #4D5B97);
+  border: 1px solid rgba(0,0,0,.75);
+  padding: .65rem;
+  box-shadow: 0 0 3rem #fff;
+  opacity: 0.75;
+  /* Buenas */
+}
+
+.herolabel p {
+  margin: 0;
+  padding: .25rem;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 ul {
     list-style-type: none;
     padding: 0;

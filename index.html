@@ -1,58 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Braxton Hotton - WDD 230 - Web Frontend Development</title>
-    <meta name="author" content="Braxton Hotton">
-    <meta
-    name="description"
-    content="This is the course assignment portal for Braxton Hotton's WDD 230 - Web Frontend Development class."
-    >
-    <meta property="og:title" content="Braxton Hotton - WDD 230 - Web Frontend Development">
-    <meta property="og:type" content="Website">
-    <meta property="og:url" content="https://hottiehotton.github.io/wdd230/">
-    <meta property="og:image" content="https://www.westjordan.utah.gov/wp-content/uploads/2021/07/homes_01@2x-1024x731.jpg">
-    <link rel="stylesheet" href="assets/styles/normalize.css">
-    <link rel="stylesheet" href="assets/styles/base.css">
-    <link rel="stylesheet" href="assets/styles/larger.css">
 
-    <link rel="icon" href="assets/images/favicon.ico">
-  </head>
-  <body>
-    <header>
-      <h1>Braxton Hotton</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Braxton Hotton - WDD 230 - Web Frontend Development</title>
+  <meta name="author" content="Braxton Hotton">
+  <meta name="description"
+    content="This is the course assignment portal for Braxton Hotton's WDD 230 - Web Frontend Development class.">
+  <meta property="og:title" content="Braxton Hotton - WDD 230 - Web Frontend Development">
+  <meta property="og:type" content="Website">
+  <meta property="og:url" content="https://hottiehotton.github.io/wdd230/">
+  <meta property="og:image"
+    content="https://www.westjordan.utah.gov/wp-content/uploads/2021/07/homes_01@2x-1024x731.jpg">
+  <link rel="stylesheet" href="assets/styles/normalize.css">
+  <link rel="stylesheet" href="assets/styles/base.css">
+  <link rel="stylesheet" href="assets/styles/larger.css">
+
+  <link rel="icon" href="assets/images/favicon.ico">
+</head>
+
+<body>
+  <header>
+    <h1>Braxton Hotton</h1>
+    <picture>
+      <img src="assets/images/meAndWife.webp" alt="Me and my wife, Abby!">
+    </picture>
+  </header>
+  <button id="menu">Menu</button>
+  <nav>
+    <a href="#">Home</a>
+    <a href="lesson03/chamber-site-plan.html">Chamber Site Plan</a>
+    <a href="chamber/">Chamber</a>
+    <a href="https://www.byui.edu/" target="_blank">BYU-Idaho Home Page</a>
+    <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/james/2?lang=eng" target="_blank">Favorite Bible
+      Scripture</a>
+  </nav>
+  <main>
+    <h2>WDD 230: Web Frontend Development</h2>
+    <div class="hero">
       <picture>
-        <img src="assets/images/meAndWife.webp" alt="Me and my wife, Abby!">
+        <source media="(max-width: 400px)" srcset="assets/images/oquirrh-mountain-temple-small-hero.webp">
+        <source media="(max-width: 960px)" srcset="assets/images/oquirrh-mountain-temple.webp">
+        <img src="assets/images/oquirrh-mountain-temple.webp" alt="oquirrh mountain temple" width="960" height="750">
       </picture>
-    </header>
-    <button id="menu">Menu</button>
-    <nav>
-      <a href="#">Home</a>
-      <a href="lesson03/chamber-site-plan.html">Chamber Site Plan</a>
-      <a href="chamber/">Chamber</a>
-      <a href="https://www.byui.edu/" target="_blank">BYU-Idaho Home Page</a>
-      <a
-        href="https://www.churchofjesuschrist.org/study/scriptures/nt/james/2?lang=eng"
-        target="_blank"
-        >Favorite Bible Scripture</a
-      >
-    </nav>
-    <main>
-      <h2>WDD 230: Web Frontend Development</h2>
-      <hr>
+      <div class="herolabel">
+        <p>Oquirrh Mountain Temple</p>
+      </div>
+    </div>
+    <hr>
+    <div class="main-cards">
       <section class="card">
         <h3>Learning Activities</h3>
         <hr>
         <ul>
           <li>
-            01: <a href="https://codepen.io/hottiehotton/pen/mdoBqWo" target="_blank">JS Pen</a> | <a href="lesson01/hoygrail.html">Holy Grail</a>
+            01: <a href="https://codepen.io/hottiehotton/pen/mdoBqWo" target="_blank">JS Pen</a> | <a
+              href="lesson01/hoygrail.html">Holy Grail</a>
           </li>
           <li>
-            02: <a href="lesson02/media-query.html">Media Query</a> | <a href="lesson02/design-principles.html">Design Principles Document</a>
+            02: <a href="lesson02/media-query.html">Media Query</a> | <a href="lesson02/design-principles.html">Design
+              Principles Document</a>
           </li>
           <li>
-            03: <a href="assets/images/combinators-img.webp">Combinators W3</a> | <a href="https://codepen.io/hottiehotton/pen/KKEXyjq" target="_blank">Pseudo Element</a> | <a href="https://codepen.io/hottiehotton/pen/abMLEzQ" target="_blank">Responsive Menu</a>
+            03: <a href="assets/images/combinators-img.webp">Combinators W3</a> | <a
+              href="https://codepen.io/hottiehotton/pen/KKEXyjq" target="_blank">Pseudo Element</a> | <a
+              href="https://codepen.io/hottiehotton/pen/abMLEzQ" target="_blank">Responsive Menu</a>
           </li>
           <li>
             04: <a href="https://codepen.io/hottiehotton/pen/poYaVXr">CSS Pseudo Classes</a>
@@ -61,7 +74,8 @@
             05: <a href="lesson05/bom.html">BOM DOM Manipulation Assignment</a>
           </li>
           <li>
-            06: <a href="lesson05/assets/images/pexels-pixabay-158316-transformed.webp">WebP Image</a> | <a href="lesson06/responsive-images.html">Responsive Images</a>
+            06: <a href="lesson05/assets/images/pexels-pixabay-158316-transformed.webp">WebP Image</a> | <a
+              href="lesson06/responsive-images.html">Responsive Images</a>
           </li>
         </ul>
       </section>
@@ -71,12 +85,16 @@
         <h4>Weather Placeholder</h4>
         <h4>Page Visit Placeholder</h4>
       </section>
-    </main>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96934.85605822541!2d-112.07919044671685!3d40.60309632097816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528ef8ed5eba6f%3A0x7229563bc344160!2sWest%20Jordan%2C%20UT!5e0!3m2!1sen!2sus!4v1706248037279!5m2!1sen!2sus" referrerpolicy="no-referrer-when-downgrade" title="Hometown"></iframe>
-    <footer>
-      <p id="copyright"></p>
-      <p id="lastModified"></p>
-    </footer>
-    <script src="assets/scripts/getdates.js"></script>
-  </body>
+    </div>
+  </main>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96934.85605822541!2d-112.07919044671685!3d40.60309632097816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528ef8ed5eba6f%3A0x7229563bc344160!2sWest%20Jordan%2C%20UT!5e0!3m2!1sen!2sus!4v1706248037279!5m2!1sen!2sus"
+    referrerpolicy="no-referrer-when-downgrade" title="Hometown"></iframe>
+  <footer>
+    <p id="copyright"></p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="assets/scripts/getdates.js"></script>
+</body>
+
 </html>
