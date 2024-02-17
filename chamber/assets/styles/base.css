@@ -97,6 +97,10 @@ footer p a{
     color: white;
 }
 
+#temperatureInput, #windSpeedInput, #calculateButton{
+    padding: 48px 48px;
+}
+
 #mode {
 	position: absolute;
 	top: 0.5rem;
