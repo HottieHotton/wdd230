@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
     
     header, nav, footer{
         margin: 0 auto;
@@ -71,6 +71,7 @@
 
     .weather{
         margin-bottom: 20px;
+        text-align: center;
     }
 
     .events {
@@ -80,7 +81,7 @@
     }
 
     .hero img {
-        width: 75%;
+        width: 70%;
         height: auto;
     }
     

@@ -45,11 +45,13 @@ modeButton.addEventListener("click", () => {
 		block.style.color = "white";
 		coa.style.background = "black";
         coa.style.color = "#fff";
+		coa.style.border = "solid 1px white";
         events.style.background = "black";
         events.style.color = "#fff";
         document.querySelectorAll('.boxes > div').forEach(box => {
             box.style.background = "black";
             box.style.color = "#fff";
+			box.style.border = "solid 1px white";
         })
 	} else {
 		modeButton.textContent = "🕶️";
@@ -65,11 +67,13 @@ modeButton.addEventListener("click", () => {
 		block.style.color = "";
 		coa.style.background = "";
         coa.style.color = "";
+		coa.style.border = "";
         events.style.background = "";
         events.style.color = "";
         document.querySelectorAll('.boxes > div').forEach(box => {
             box.style.background = "";
             box.style.color = "";
+			box.style.border = "";
         })
 	}
 });
