@@ -1,5 +1,18 @@
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('nav');
+const visitsCounter = document.querySelector(".visits");
+
+let counter = Number(window.localStorage.getItem("counter")) || 1;
+
+if (counter > 2) {
+	visitsCounter.textContent = counter;
+} else if(counter < 2) {
+	visitsCounter.innerHTML = `<br>This is your first visit. 🥳 Welcome!`;
+}
+
+counter++;
+
+localStorage.setItem("counter", counter);
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
