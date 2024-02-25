@@ -18,6 +18,8 @@
       display: block;
       flex: 1 1 100%;
       padding: 10px;
+      text-decoration: none;
+      color: black;
     }
 
     nav a:hover{
@@ -98,5 +100,18 @@
         font-size: 3rem;
         cursor: pointer;
         font-size: 2rem;
+    }
+
+    .gallery img{
+        padding-top: 15px;
+        width: 600px;
+    }
+
+    .gallery img:hover{
+        box-shadow: 0 0 50px #333;
+    }
+
+    .attractions img{
+        width: 600px;
     }
   }

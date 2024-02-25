@@ -16,6 +16,7 @@ nav a {
     text-decoration: none;
     padding: 10px;
     display: none;
+    color: black;
 }
 
 #menu {
@@ -97,10 +98,6 @@ footer p a{
     color: white;
 }
 
-#temperatureInput, #windSpeedInput, #calculateButton{
-    padding: 48px 48px;
-}
-
 #mode {
 	position: absolute;
 	top: 0.5rem;
@@ -108,4 +105,13 @@ footer p a{
 	font-size: 1.5rem;
 	cursor: pointer;
 	font-size: 2rem;
+}
+
+section{
+    background-color: white;
+    border: solid 1px black;
+}
+
+section a{
+    color: black;
 }
