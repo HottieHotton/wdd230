@@ -105,6 +105,7 @@
     .gallery img{
         padding-top: 15px;
         width: 600px;
+        height: 400px;
     }
 
     .gallery img:hover{
@@ -113,5 +114,10 @@
 
     .attractions img{
         width: 600px;
+    }
+
+    iframe{
+        width: 100%;
+        height: 400px;
     }
   }

@@ -115,3 +115,16 @@ section{
 section a{
     color: black;
 }
+
+.gallery img{
+    width: 100%;
+}
+
+.attractions img{
+    width: 100%;
+}
+
+iframe{
+    width: 100%;
+    height: 400px;
+}
