@@ -62,7 +62,7 @@ modeButton.addEventListener("click", () => {
 		box.style.border = "solid 1px white";
 	  });
 
-    if (document.querySelectorAll("main div").length >3) {
+    if (document.querySelectorAll("main div").length >4) {
       block.style.background = "grey";
       block.style.color = "white";
       coa.style.background = "black";
@@ -101,7 +101,7 @@ modeButton.addEventListener("click", () => {
 		box.style.border = "";
 	  });
 
-    if (document.querySelectorAll("main div").length >3) {
+    if (document.querySelectorAll("main div").length >4) {
       block.style.background = "";
       block.style.color = "";
       coa.style.background = "";
