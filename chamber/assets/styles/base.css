@@ -47,7 +47,7 @@ nav a {
 }
 
 header{
-    background-color: #03254E;
+    background-color: #023169;
     color: white;
     padding: 10px;
 }
@@ -127,4 +127,106 @@ section a{
 iframe{
     width: 100%;
     height: 400px;
+}
+
+.wjform fieldset{
+    margin: 2rem 0;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.wjform legend{
+    color: black;
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+}
+
+.wjform label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    color: black;
+    font-size: .9rem;
+}
+
+.wjform div{
+    padding-top: 1rem;
+    color: black;
+    font-size: .9rem;
+}
+
+.wjform input[type="text"],
+.wjform input[type="tel"],
+.wjform input[type="email"],
+.wjform input[type="number"],
+.wjform select{
+    background-color: #eee;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    padding: .75rem;
+    color: black;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    margin-left: 10px;
+}
+
+.wjform input:required{
+    border: 2px solid red;
+}
+
+.wjform input:required:valid{
+    border: 1px solid black;
+}
+
+.wjform input[type="radio"],
+.wjform input[type="checkbox"]{
+    margin-right: 6px;
+}
+
+.wjform input[type="submit"]{
+    background-color: lightgrey;
+    border-radius: 8px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    box-shadow: 1px 1px 4px #999;
+    margin-top: 10px;
+}
+
+.wjform input[type="submit"]:hover{
+    background-color: grey;
+}
+
+.wjform, .membership-benefits-table {
+    width: 100%;
+    margin: 0;
+}
+
+.wjform textarea {
+    align-self: center;
+    padding: .6rem;
+    color: black;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    margin-left: 10px;
+    background-color: #eee;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.membership-benefits img{
+    display: none;
 }

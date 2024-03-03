@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Jordan Chamber of Commerce - Join</title>
+    <meta name="author" content="Braxton Hotton">
+    <meta name="description" content="Join our Page to receive updates, get a membership, and be in discussions!">
+    <meta property="og:title" content="Braxton Hotton - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hottiehotton.github.io/wdd230/chamber">
+    <meta property="og:image"
+        content="https://www.westjordan.utah.gov/wp-content/uploads/2021/07/homes_01@2x-1024x731.jpg">
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/base.css">
+    <link rel="stylesheet" href="assets/styles/medium.css">
+    <link rel="stylesheet" href="assets/styles/larger.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+</head>
+
+<body>
+    <div id="mode">
+        🌙
+    </div>
+    <header>
+        <h1>Wecome to the:<br>West Jordan Chamber of Commerce Website</h1>
+    </header>
+    <button id="menu">Menu</button>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./discover.html">Discovery</a>
+        <a href="">Page 2</a>
+        <a href="">Page 3</a>
+    </nav>
+    <main>
+        <div class="join">
+        <form method="get" action="thankyou.html" target="_blank" class="wjform">
+            <fieldset>
+                <legend>Create Membership</legend>
+                <label for="first_name">First Name*:
+                    <input type="text" id="first_name" name="first_name" required placeholder="John">
+                </label>
+                <label for="last_name">Last Name*:
+                    <input type="text" id="last_name" name="last_name" required placeholder="Doe">
+                </label>
+                <label for="title">Title/Position*:
+                    <input type="text" id="title" name="title" required pattern="[A-Za-z\s-]{7,}" placeholder="Technical Support Engineer">
+                </label>
+                <label for="email">Email*:
+                    <input type="email" id="email" name="email" required placeholder="example@example.com">
+                </label>
+                <label for="phone">Mobile Phone*:
+                    <input type="tel" id="phone" name="phone" required placeholder="5555555555">
+                </label>
+                <label for="organization">Organization Name*:
+                    <input type="text" id="organization" name="organization" required placeholder="Company Example">
+                </label>
+                <label for="description">Organization Description:
+                    <textarea id="description" name="description"></textarea>
+                </label>
+                <label for="membership_level">Membership Level:
+                    <select id="membership_level" name="membership_level" required>
+                        <option value="">Select Membership</option>
+                        <option value="NP">NP Membership</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+                <input type="hidden" id="timestamp" name="timestamp">
+                <input type="submit" value="Create Membership">   
+            </fieldset>
+        </form>
+        <div class="membership-benefits">
+            <table>
+                <caption>
+                    <h2>Membership Benefits</h2>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Membership Level</th>
+                        <th>Special Events</th>
+                        <th>Training</th>
+                        <th>Advertising</th>
+                        <th>Event Discounts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NP Membership</td>
+                        <td>✔️</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Bronze Membership</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Silver Membership</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Gold Membership</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                </tbody>
+            </table>
+            <img src="assets/images/handshake.webp" loading="lazy" alt="Handshake">
+        </div>
+    </div>
+    </main>
+    <footer>
+        <p>Questions? Email me: <a href="mailto:bhotton25@gmail.com">bhotton25@gmail.com</a></p>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="assets/scripts/getdates.js"></script>
+</body>
+
+</html>

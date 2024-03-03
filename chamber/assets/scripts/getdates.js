@@ -32,12 +32,12 @@ document.getElementById(
 ).innerHTML = `Last Modified: ${lastModified}<br>This website is a project for my WDD230 BYU-Idaho Class`;
 
 modeButton.addEventListener("click", () => {
-  if (modeButton.textContent.includes("🕶️")) {
+  if (modeButton.textContent.includes("🌙")) {
     main.style.background = "grey";
     body.style.background = "#000";
     navigation.style.background = "darkgrey";
     document.querySelectorAll("nav a").forEach((link) => {
-      link.style.color = "white";
+      link.style.color = "black";
     });
     head.style.background = "black";
     footer.style.background = "black";
@@ -48,6 +48,10 @@ modeButton.addEventListener("click", () => {
       box.style.background = "black";
       box.style.color = "#fff";
       box.style.border = "solid 1px white";
+    });
+
+    document.querySelectorAll(".membership-benefits").forEach((table) => {
+      table.style.color = "black";
     });
 
 	document.querySelectorAll(".boxes > div > section").forEach((box) => {
@@ -72,7 +76,7 @@ modeButton.addEventListener("click", () => {
       events.style.color = "#fff";
     }
   } else {
-    modeButton.textContent = "🕶️";
+    modeButton.textContent = "🌙";
     main.style.background = "#06ADEF";
     main.style.color = "#000";
     body.style.background = "white";
