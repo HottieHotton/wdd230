@@ -67,6 +67,10 @@ main{
     align-items: center;
 }
 
+.coa a{
+    text-decoration: none;
+}
+
 .block {
     display: block;
     border: none;
