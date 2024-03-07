@@ -1,0 +1,40 @@
+{
+    "wardInformation": {
+        "familyName": "Jackson",
+        "moveInDate": "2014-07-31",
+        "numberOfPeople": 6,
+        "visitedByBishop": true,
+        "familyMembers": [
+            {
+                "name": "Henry Jackson",
+                "gender": "Male",
+                "birthdate": "1976-5-15"
+            },
+            {
+                "name": "Jane Jackson",
+                "gender": "Female",
+                "birthdate": "1978-8-23"
+            },
+            {
+                "name": "Albert Jackson",
+                "gender": "Male",
+                "birthdate": "1999-11-04"
+            },
+            {
+                "name": "Donnie Jackson",
+                "gender": "Female",
+                "birthdate": "2001-10-18"
+            },
+            {
+                "name": "Shane Jackson",
+                "gender": "Male",
+                "birthdate": "2004-8-28"
+            },
+            {
+                "name": "Julie Jackson",
+                "gender": "Female",
+                "birthdate": "2006-6-09"
+            }
+        ]
+    }
+}

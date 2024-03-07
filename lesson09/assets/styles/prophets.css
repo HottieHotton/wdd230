@@ -1,0 +1,9 @@
+body{
+    background-color: rgba(144, 238, 186, 0.489);
+    text-align: center;
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
