@@ -54,19 +54,22 @@ modeButton.addEventListener("click", () => {
       table.style.color = "black";
     });
 
-	document.querySelectorAll(".boxes > div > section").forEach((box) => {
-		document.querySelectorAll("section a").forEach((link) => {
-			link.style.color = "white";
-		  });
-		document.querySelectorAll(".attractions img").forEach((image) =>{
-			image.style.boxShadow = "box-shadow: 0 0 50px white";
-		})
-		box.style.background = "black";
-		box.style.color = "#fff";
-		box.style.border = "solid 1px white";
-	  });
+    document.querySelectorAll(".boxes > div > section").forEach((box) => {
+      document.querySelectorAll("section a").forEach((link) => {
+        link.style.color = "white";
+      });
+      document.querySelectorAll(".attractions img").forEach((image) => {
+        image.style.boxShadow = "box-shadow: 0 0 50px white";
+      });
+      box.style.background = "black";
+      box.style.color = "#fff";
+      box.style.border = "solid 1px white";
+    });
 
-    if (document.querySelectorAll("main div").length >4) {
+    if (
+      document.querySelectorAll("main div").length > 4 &&
+      document.querySelectorAll("main div").length < 20
+    ) {
       block.style.background = "grey";
       block.style.color = "white";
       coa.style.background = "black";
@@ -93,19 +96,22 @@ modeButton.addEventListener("click", () => {
       box.style.border = "";
     });
 
-	document.querySelectorAll(".boxes > div > section").forEach((box) => {
-		document.querySelectorAll(".attractions img").forEach((image) =>{
-			image.style.boxShadow = "";
-		})
-		document.querySelectorAll("section a").forEach((link) => {
-			link.style.color = "";
-		  });
-		box.style.background = "";
-		box.style.color = "";
-		box.style.border = "";
-	  });
+    document.querySelectorAll(".boxes > div > section").forEach((box) => {
+      document.querySelectorAll(".attractions img").forEach((image) => {
+        image.style.boxShadow = "";
+      });
+      document.querySelectorAll("section a").forEach((link) => {
+        link.style.color = "";
+      });
+      box.style.background = "";
+      box.style.color = "";
+      box.style.border = "";
+    });
 
-    if (document.querySelectorAll("main div").length >4) {
+    if (
+      document.querySelectorAll("main div").length > 4 &&
+      document.querySelectorAll("main div").length < 20
+    ) {
       block.style.background = "";
       block.style.color = "";
       coa.style.background = "";
@@ -118,38 +124,46 @@ modeButton.addEventListener("click", () => {
 });
 
 function getCurrentDate() {
-	const now = new Date();
-	return now.toISOString().split('T')[0];
+  const now = new Date();
+  return now.toISOString().split("T")[0];
 }
 
 function getDateDifference(startDate, endDate) {
-	const start = new Date(startDate);
-	const end = new Date(endDate);
-	const diffTime = Math.abs(end - start);
-	const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-	return diffDays;
+  const start = new Date(startDate);
+  const end = new Date(endDate);
+  const diffTime = Math.abs(end - start);
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  return diffDays;
 }
 
 function displayMessage() {
-	const currentDate = getCurrentDate();
-	const lastVisitDate = localStorage.getItem('lastVisitDate');
+  const currentDate = getCurrentDate();
+  const lastVisitDate = localStorage.getItem("lastVisitDate");
+  document.querySelectorAll(".page-view").forEach((view) => {
+    if (!lastVisitDate) {
+      // First visit
+      document.querySelector(".page-view").innerText =
+        "Welcome! Let us know if you have any questions.";
+    } else {
+      const daysSinceLastVisit = getDateDifference(lastVisitDate, currentDate);
 
-	if (!lastVisitDate) {
-		// First visit
-		document.querySelector(".page-view").innerText = "Welcome! Let us know if you have any questions.";
-	} else {
-		const daysSinceLastVisit = getDateDifference(lastVisitDate, currentDate);
+      if (daysSinceLastVisit === 1) {
+        document.querySelector(
+          ".page-view"
+        ).innerText = `You last visited 1 day ago.`;
+      } else if (daysSinceLastVisit < 1) {
+        document.querySelector(
+          ".page-view"
+        ).innerText = `Back so soon! Awesome!`;
+      } else {
+        document.querySelector(
+          ".page-view"
+        ).innerText = `You last visited ${daysSinceLastVisit} days ago.`;
+      }
+    }
+  });
 
-		if (daysSinceLastVisit === 1) {
-			document.querySelector(".page-view").innerText = `You last visited 1 day ago.`;
-		} else if (daysSinceLastVisit < 1) {
-			document.querySelector(".page-view").innerText = `Back so soon! Awesome!`;
-		} else {
-			document.querySelector(".page-view").innerText = `You last visited ${daysSinceLastVisit} days ago.`;
-		}
-	}
-
-	localStorage.setItem('lastVisitDate', currentDate);
+  localStorage.setItem("lastVisitDate", currentDate);
 }
 
 displayMessage();

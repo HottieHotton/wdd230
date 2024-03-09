@@ -1,186 +1,192 @@
 @media screen and (min-width: 1000px) {
-    
-    header, nav, footer{
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-    }
-
-    nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      padding: 0;
-      align-items: center;
-    }
-
-    nav a {
-      display: block;
-      flex: 1 1 100%;
-      padding: 10px;
-      text-decoration: none;
-      color: black;
-    }
-
-    nav a:hover{
-        background-color: lightgray;
-    }
-
-    #menu {
-        display: none; /* hide hamburger button */
-    }
-
-    /* header{
-        background-color: #03254E;
-        color: white;
-    } */
-
-    .block {
-        display: block;
-        border: none;
-        background-color: #06ADEF;
-        padding: 14px 28px;
-        font-size: 16px;
-        cursor: pointer;
-        text-align: center;
-    }
-    
-    main{
-        background-color: #06ADEF;
-        flex-direction: column;
-        display: grid;
-    }
-
-    .coa {
-        background-color: white;
-        margin: 0 auto;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .boxes{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-    }
-
-    .boxes div{
-        background-color: white;
-        border: solid 1px black;
-    }
-
-    .weather{
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .events {
-        grid-column: 1/-1;
-        background-color: white;
-        border: solid 1px black;
-    }
-
-    .hero img {
-        width: 70%;
-        height: auto;
-    }
-    
-    footer{
-        flex-direction: column;
-        /* background-color: #03254E; */
-        color: white;
-    }
-
-    #mode {
-        position: absolute;
-        top: 0.5rem;
-        left: 0.5rem;
-        font-size: 3rem;
-        cursor: pointer;
-        font-size: 2rem;
-    }
-
-    .gallery img{
-        padding-top: 15px;
-        width: 600px;
-        height: 400px;
-    }
-
-    .gallery img:hover{
-        box-shadow: 0 0 50px #333;
-    }
-
-    .attractions img{
-        width: 600px;
-    }
-
-    iframe{
-        width: 100%;
-        height: 400px;
-    }
-
-    .join {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .wjform {
-        width: 48%;
-    }
-
-    .wjform label {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 1rem;
-        color: black;
-        font-size: 1rem;
-    }
-
-    .membership-benefits {
-        display: flex;
-        width: 48%;
-        flex-direction: column;
-        align-items: center; /* Center the content vertically */
-    }
-    
-    .membership-benefits img {
-        max-width: 100%;
-        margin-top: 30px; /* Adjust margin as needed */
-        display: flex;
-    }
-    
-    .membership-benefits table {
-        width: 100%;
-        max-width: 600px; /* Adjust the max-width of the table as needed */
-        border: 1px solid #ccc; /* Add border to the table */
-        border-collapse: collapse; /* Collapse table borders */
-    }
-    
-    .membership-benefits table caption {
-        text-align: center;
-        font-weight: bold;
-        padding: 10px; /* Add padding to the caption */
-    }
-    
-    .membership-benefits table th,
-    .membership-benefits table td {
-        padding: 10px;
-        border: 1px solid #ccc;
-    }
-
-    .wjform textarea {
-        align-self: center;
-        padding: .6rem;
-        color: black;
-        width: 100%;
-        max-width: 400px;
-        appearance: none;
-        margin-left: 10px;
-        background-color: #eee;
-    }
-
+  header,
+  nav,
+  footer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    flex: 1 1 100%;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+  nav a:hover {
+    background-color: lightgray;
+  }
+
+  #menu {
+    display: none; /* hide hamburger button */
+  }
+
+  .block {
+    display: block;
+    border: none;
+    background-color: #06adef;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  main {
+    background-color: #06adef;
+    flex-direction: column;
+    display: grid;
+  }
+
+  .coa {
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  .boxes div {
+    background-color: white;
+    border: solid 1px black;
+  }
+
+  .weather {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .events {
+    grid-column: 1/-1;
+    background-color: white;
+    border: solid 1px black;
+  }
+
+  .hero img {
+    width: 70%;
+    height: auto;
+  }
+
+  footer {
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+    width: 99%;
+  }
+
+  #mode {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  .gallery img {
+    padding-top: 15px;
+    width: 600px;
+    height: 400px;
+  }
+
+  .gallery img:hover {
+    box-shadow: 0 0 50px #333;
+  }
+
+  .attractions img {
+    width: 600px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  .join {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .wjform {
+    width: 48%;
+  }
+
+  .wjform label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    color: black;
+    font-size: 1rem;
+  }
+
+  .membership-benefits {
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .membership-benefits img {
+    max-width: 100%;
+    margin-top: 30px;
+    display: flex;
+  }
+
+  .membership-benefits table {
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+  }
+
+  .membership-benefits table caption {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  .membership-benefits table th,
+  .membership-benefits table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .wjform textarea {
+    align-self: center;
+    padding: 0.6rem;
+    color: black;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    margin-left: 10px;
+    background-color: #eee;
+  }
+
+  .list-view .member img {
+    display: inline-block;
+    width: 25%;
+    height: 25%;
+  }
+
+  .list-view .member{
+    font-size: 1.5rem;
+  }
+}

@@ -29,8 +29,6 @@
     }
 
     header{
-        /* background-color: #03254E; */
-        /* color: white; */
         padding: 10px;
     }
     
@@ -78,7 +76,6 @@
     
     footer{
         flex-direction: column;
-        /* background-color: #03254E; */
         color: white;
         padding: 10px;
         text-decoration: none;
@@ -91,7 +88,7 @@
     .wjform,
     .membership-benefits {
         width: 100%;
-        display: block; /* Ensure they are block-level elements */
+        display: block;
     }
 
     /* Set the order to display the membership table below the form */
@@ -111,4 +108,10 @@
     .membership-benefits img{
         display: none;
     }
+
+    .list-view .member img {
+        display: inline-block;
+        width: 25%;
+        height: 25%;
+      }
   }
