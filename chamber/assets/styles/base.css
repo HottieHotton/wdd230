@@ -262,6 +262,11 @@ td {
   margin-bottom: 5px;
 }
 
+.member p a{
+    text-decoration: none;
+    color: black;
+}
+
 /* Grid view */
 .grid-view {
   display: grid;

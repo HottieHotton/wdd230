@@ -78,6 +78,10 @@ modeButton.addEventListener("click", () => {
       events.style.background = "black";
       events.style.color = "#fff";
     }
+
+    document.querySelectorAll(".member p a").forEach((memberLink) => {
+      memberLink.style.color = "white";
+    })
   } else {
     modeButton.textContent = "🌙";
     main.style.background = "#06ADEF";
@@ -120,6 +124,9 @@ modeButton.addEventListener("click", () => {
       events.style.background = "";
       events.style.color = "";
     }
+    document.querySelectorAll(".member p a").forEach((memberLink) => {
+      memberLink.style.color = "black";
+    })
   }
 });
 
