@@ -141,4 +141,11 @@ footer {
     padding: 10px;
 }
 
-/* Add any additional styling as needed */
+.weather{
+    display: flex;
+    justify-content: center;
+}
+
+.visits{
+    font-size: 2rem;
+}

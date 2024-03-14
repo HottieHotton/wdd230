@@ -62,6 +62,12 @@
           {"url": "lesson09/new-ward-members.json", "title": "JSON"},
           {"url": "lesson09/prophets.html", "title": "Prophets"}
         ]
+      },
+      {
+        "lesson": "10",
+        "links": [
+          {"url": "lesson10/weather.html", "title": "OpenWeather API"}
+        ]
       }
     ]
   }
