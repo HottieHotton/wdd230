@@ -54,6 +54,15 @@ modeButton.addEventListener("click", () => {
       table.style.color = "black";
     });
 
+    document.querySelectorAll(".forecast, .card, .card-body").forEach((forecast) => {
+      forecast.style.background = "black";
+      forecast.style.color = "#fff";
+    });
+
+    document.querySelectorAll(".card-body img").forEach((img) => {
+      img.style.background = "none";
+    })
+
     document.querySelectorAll(".boxes > div > section").forEach((box) => {
       document.querySelectorAll("section a").forEach((link) => {
         link.style.color = "white";
@@ -99,6 +108,15 @@ modeButton.addEventListener("click", () => {
       box.style.color = "";
       box.style.border = "";
     });
+
+    document.querySelectorAll(".forecast, .card, .card-body").forEach((forecast) => {
+      forecast.style.background = "";
+      forecast.style.color = "";
+    });
+
+    document.querySelectorAll(".card-body img").forEach((img) => {
+      img.style.background = "lightgrey";
+    })
 
     document.querySelectorAll(".boxes > div > section").forEach((box) => {
       document.querySelectorAll(".attractions img").forEach((image) => {

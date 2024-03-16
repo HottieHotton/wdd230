@@ -25,7 +25,6 @@ nav a {
   background: none;
   color: white;
   position: absolute;
-  top: 0.5rem;
   right: 0.5rem;
 }
 
@@ -104,7 +103,6 @@ footer p a {
 
 #mode {
   position: absolute;
-  top: 0.5rem;
   left: 0.5rem;
   font-size: 1.5rem;
   cursor: pointer;
@@ -262,9 +260,9 @@ td {
   margin-bottom: 5px;
 }
 
-.member p a{
-    text-decoration: none;
-    color: black;
+.member p a {
+  text-decoration: none;
+  color: black;
 }
 
 /* Grid view */
@@ -275,28 +273,64 @@ td {
 }
 
 .grid-view .member .text-manager {
-    flex-grow: 1;
-    overflow: hidden;
-    word-wrap: break-word;
-  }
+  flex-grow: 1;
+  overflow: hidden;
+  word-wrap: break-word;
+}
 
 /* List view */
 .list-view .member {
-    display: flex;
-    align-items: center;
-  }
-  
-  .list-view .member img {
-    display: none;
-  }
-  
-  .list-view .member .text-manager {
-    flex-grow: 1;
-    overflow: hidden;
-  }
-  
-  .list-view .member h2,
-  .list-view .member p {
-    margin: 0;
-    word-wrap: break-word;
-  }
+  display: flex;
+  align-items: center;
+}
+
+.list-view .member img {
+  display: none;
+}
+
+.list-view .member .text-manager {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.list-view .member h2,
+.list-view .member p {
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.forecast .card .card-body {
+  border: none;
+}
+
+.card .forecast {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-header {
+  font-size: 1.5rem;
+}
+
+.card-body img {
+  width: 50px;
+  margin-bottom: 5px;
+  background-color: lightgrey;
+}
+
+.banner {
+  display: block;
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+}
+
+#closeBanner {
+  background-color: transparent;
+  border: none;
+  color: #721c24;
+  font-size: 1rem;
+  cursor: pointer;
+}
