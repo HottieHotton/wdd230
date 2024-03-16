@@ -196,3 +196,7 @@ function displayMessage() {
 }
 
 displayMessage();
+
+block.addEventListener('click', () =>{
+  window.location.href = "join.html";
+});
