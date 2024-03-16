@@ -66,8 +66,9 @@ main {
   align-items: center;
 }
 
-.coa a {
+.coa .block a {
   text-decoration: none;
+  color: black;
 }
 
 .block {

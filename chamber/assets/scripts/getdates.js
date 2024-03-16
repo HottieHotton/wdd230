@@ -84,6 +84,8 @@ modeButton.addEventListener("click", () => {
       coa.style.background = "black";
       coa.style.color = "#fff";
       coa.style.border = "solid 1px white";
+      signup = document.querySelector(".coa .block a");
+      signup.style.color = "white";
       events.style.background = "black";
       events.style.color = "#fff";
     }
@@ -139,6 +141,8 @@ modeButton.addEventListener("click", () => {
       coa.style.background = "";
       coa.style.color = "";
       coa.style.border = "";
+      signup = document.querySelector(".coa .block a");
+      signup.style.color = "";
       events.style.background = "";
       events.style.color = "";
     }
