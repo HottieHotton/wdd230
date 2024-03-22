@@ -54,14 +54,16 @@ modeButton.addEventListener("click", () => {
       table.style.color = "black";
     });
 
-    document.querySelectorAll(".forecast, .card, .card-body").forEach((forecast) => {
-      forecast.style.background = "black";
-      forecast.style.color = "#fff";
-    });
+    document
+      .querySelectorAll(".forecast, .card, .card-body")
+      .forEach((forecast) => {
+        forecast.style.background = "black";
+        forecast.style.color = "#fff";
+      });
 
     document.querySelectorAll(".card-body img").forEach((img) => {
       img.style.background = "none";
-    })
+    });
 
     document.querySelectorAll(".boxes > div > section").forEach((box) => {
       document.querySelectorAll("section a").forEach((link) => {
@@ -90,9 +92,13 @@ modeButton.addEventListener("click", () => {
       events.style.color = "#fff";
     }
 
+    document.querySelectorAll(".member").forEach((member) => {
+      member.style.background = "grey";
+    });
+
     document.querySelectorAll(".member p a").forEach((memberLink) => {
       memberLink.style.color = "white";
-    })
+    });
   } else {
     modeButton.textContent = "🌙";
     main.style.background = "#06ADEF";
@@ -111,14 +117,16 @@ modeButton.addEventListener("click", () => {
       box.style.border = "";
     });
 
-    document.querySelectorAll(".forecast, .card, .card-body").forEach((forecast) => {
-      forecast.style.background = "";
-      forecast.style.color = "";
-    });
+    document
+      .querySelectorAll(".forecast, .card, .card-body")
+      .forEach((forecast) => {
+        forecast.style.background = "";
+        forecast.style.color = "";
+      });
 
     document.querySelectorAll(".card-body img").forEach((img) => {
       img.style.background = "lightgrey";
-    })
+    });
 
     document.querySelectorAll(".boxes > div > section").forEach((box) => {
       document.querySelectorAll(".attractions img").forEach((image) => {
@@ -146,9 +154,14 @@ modeButton.addEventListener("click", () => {
       events.style.background = "";
       events.style.color = "";
     }
+
+    document.querySelectorAll(".member").forEach((member) => {
+      member.style.background = "";
+    });
+
     document.querySelectorAll(".member p a").forEach((memberLink) => {
       memberLink.style.color = "black";
-    })
+    });
   }
 });
 
@@ -197,6 +210,8 @@ function displayMessage() {
 
 displayMessage();
 
-block.addEventListener('click', () =>{
-  window.location.href = "join.html";
-});
+if (block != null) {
+  block.addEventListener("click", () => {
+    window.location.href = "join.html";
+  });
+}
