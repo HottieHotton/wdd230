@@ -87,6 +87,16 @@ main {
   border: solid 1px black;
 }
 
+.spotlights .text-manager{
+  margin-top: -10px;
+  font-size: 1rem;
+}
+
+.spotlights .text-manager a{
+  text-decoration: none;
+  color: black;
+}
+
 .hero img {
   width: 100%;
 }
@@ -310,6 +320,10 @@ td {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.card{
+  padding-bottom: 9px;
 }
 
 .card-header {

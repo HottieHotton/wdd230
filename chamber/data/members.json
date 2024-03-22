@@ -5,7 +5,7 @@
         "address": "6635 S. Milfoil Circle West Jordan, UT 84081",
         "phone": "(801) 717-7808",
         "website": "http://www.xl-pr.com",
-        "membership_level": "",
+        "membership_level": "Gold",
         "image": "./assets/images/directory/xl-pro.webp",
         "other_information": "Public relations firm specializing in media relations and strategic communication."
       },
@@ -14,7 +14,7 @@
         "address": "4256 W. 8370 S. West Jordan, UT 84088",
         "phone": "(801) 280-2180",
         "website": "http://mykkp.com/",
-        "membership_level": "",
+        "membership_level": "Bronze",
         "image": "./assets/images/directory/kkp.webp",
         "other_information": "Experienced printing services including digital, offset, and large format printing."
       },
@@ -23,7 +23,7 @@
         "address": "7211 S. Plaza Center Dr. #160 West Jordan, UT 84084",
         "phone": "(801) 805-4800",
         "website": "http://www.puppiesforsalesaltlakecity.com/",
-        "membership_level": "",
+        "membership_level": "Silver",
         "image": "./assets/images/directory/The-puppy-store-salt-lake-city-logo-2-300.webp",
         "other_information": "Specializing in purebred and designer puppies with care and health guarantees."
       },
@@ -32,7 +32,7 @@
         "address": "7138 S. Plaza Center Drive #110 West Jordan, UT 84084",
         "phone": "1-800-XFINITY",
         "website": "http://www.xfinity.com",
-        "membership_level": "",
+        "membership_level": "Bronze",
         "image": "./assets/images/directory/xfinity.webp",
         "other_information": "Xfinity retail store offering internet, TV, and phone services."
       },
@@ -41,7 +41,7 @@
         "address": "1776 W. 7800 S. West Jordan, UT 84088",
         "phone": "(801) 566-6627",
         "website": "https://allstarbowlingandentertainment.com/locations/west_jordan/",
-        "membership_level": "",
+        "membership_level": "Gold",
         "image": "./assets/images/directory/all-star-logo.webp",
         "other_information": "Family-friendly bowling center with leagues, parties, and arcade games."
       },
@@ -50,7 +50,7 @@
         "address": "8060 S. 1300 W. West Jordan, UT 84088",
         "phone": "(801) 406-6006",
         "website": "http://www.access-simplified.com",
-        "membership_level": "",
+        "membership_level": "Silver",
         "image": "./assets/images/directory/Access-Simplified.webp",
         "other_information": "IT consulting firm providing solutions for access control and security systems."
       },
@@ -59,7 +59,7 @@
         "address": "3333 W 9000 S West Jordan, UT 84088",
         "phone": "(833) 425-4463",
         "website": "http://www.aligneddc.com",
-        "membership_level": "",
+        "membership_level": "Gold",
         "image": "./assets/images/directory/aligned-logo.webp",
         "other_information": "Data center solutions for companies seeking scalable and efficient infrastructure."
       },
@@ -68,7 +68,7 @@
         "address": "6796 S. Airport Rd. West Jordan, UT 84084",
         "phone": "(801) 562-9400",
         "website": "http://www.naagtag.com",
-        "membership_level": "",
+        "membership_level": "Bronze",
         "image": "./assets/images/directory/Naag-Tag-Company-Logo.webp",
         "other_information": "Manufacturer of high-quality engraved tags and labels for industrial and commercial use."
       },
@@ -77,7 +77,7 @@
         "address": "9114 S. RIDGE PEAK DR. West Jordan, UT 84081",
         "phone": "(801) 814-8963",
         "website": "http://www.oakwoodutah.com",
-        "membership_level": "",
+        "membership_level": "Silver",
         "image": "./assets/images/directory/OAKWOOD+LOGO.webp",
         "other_information": "Consulting firm offering strategic planning and management solutions."
       },
@@ -86,7 +86,7 @@
         "address": "6477 Wells Park Rd. West Jordan, UT 84081",
         "phone": "(801) 830-4132",
         "website": "http://www.novva.com",
-        "membership_level": "",
+        "membership_level": "Gold",
         "image": "./assets/images/directory/nova-logo.webp",
         "other_information": "Innovative software development company specializing in web and mobile applications."
       }

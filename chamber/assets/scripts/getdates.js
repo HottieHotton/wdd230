@@ -50,6 +50,16 @@ modeButton.addEventListener("click", () => {
       box.style.border = "solid 1px white";
     });
 
+    document.querySelectorAll(".spotlights .text-manager").forEach((item) => {
+      item.style.background = "black";
+      item.style.color = "white";
+      item.style.border = "1px solid white";
+    });
+    
+    document.querySelectorAll(".spotlights .text-manager a").forEach((itemLink) => {
+      itemLink.style.color = "white";
+    });
+
     document.querySelectorAll(".membership-benefits").forEach((table) => {
       table.style.color = "black";
     });
@@ -59,6 +69,11 @@ modeButton.addEventListener("click", () => {
       .forEach((forecast) => {
         forecast.style.background = "black";
         forecast.style.color = "#fff";
+      });
+    document
+      .querySelectorAll(".card")
+      .forEach((card) => {
+        card.style.border = "1px solid white";
       });
 
     document.querySelectorAll(".card-body img").forEach((img) => {
@@ -86,8 +101,6 @@ modeButton.addEventListener("click", () => {
       coa.style.background = "black";
       coa.style.color = "#fff";
       coa.style.border = "solid 1px white";
-      signup = document.querySelector(".coa .block a");
-      signup.style.color = "white";
       events.style.background = "black";
       events.style.color = "#fff";
     }
@@ -117,11 +130,27 @@ modeButton.addEventListener("click", () => {
       box.style.border = "";
     });
 
+    document.querySelectorAll(".spotlights .text-manager").forEach((item) => {
+      item.style.background = "";
+      item.style.color = "";
+      item.style.border = "";
+    });
+    
+    document.querySelectorAll(".spotlights .text-manager a").forEach((itemLink) => {
+      itemLink.style.color = "";
+    });
+
     document
       .querySelectorAll(".forecast, .card, .card-body")
       .forEach((forecast) => {
         forecast.style.background = "";
         forecast.style.color = "";
+      });
+
+    document
+      .querySelectorAll(".card")
+      .forEach((card) => {
+        card.style.border = "";
       });
 
     document.querySelectorAll(".card-body img").forEach((img) => {
@@ -149,8 +178,6 @@ modeButton.addEventListener("click", () => {
       coa.style.background = "";
       coa.style.color = "";
       coa.style.border = "";
-      signup = document.querySelector(".coa .block a");
-      signup.style.color = "";
       events.style.background = "";
       events.style.color = "";
     }
