@@ -77,6 +77,12 @@
     border: solid 1px black;
   }
 
+  .eventlist{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .hero img {
     width: 70%;
     height: auto;

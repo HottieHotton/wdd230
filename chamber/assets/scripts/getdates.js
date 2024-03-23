@@ -92,10 +92,7 @@ modeButton.addEventListener("click", () => {
       box.style.border = "solid 1px white";
     });
 
-    if (
-      document.querySelectorAll("main div").length > 4 &&
-      document.querySelectorAll("main div").length < 20
-    ) {
+    if (document.querySelector(".home") != null) {
       block.style.background = "grey";
       block.style.color = "white";
       coa.style.background = "black";
@@ -104,6 +101,12 @@ modeButton.addEventListener("click", () => {
       events.style.background = "black";
       events.style.color = "#fff";
     }
+
+    document.querySelectorAll(".eventlist div").forEach((event) => {
+      event.style.color = "white";
+      event.style.background = "black";
+      event.style.border = "1px solid white";
+    })
 
     document.querySelectorAll(".member").forEach((member) => {
       member.style.background = "grey";
@@ -169,10 +172,7 @@ modeButton.addEventListener("click", () => {
       box.style.border = "";
     });
 
-    if (
-      document.querySelectorAll("main div").length > 4 &&
-      document.querySelectorAll("main div").length < 20
-    ) {
+    if (document.querySelector(".home") != null){
       block.style.background = "";
       block.style.color = "";
       coa.style.background = "";
@@ -181,6 +181,12 @@ modeButton.addEventListener("click", () => {
       events.style.background = "";
       events.style.color = "";
     }
+
+    document.querySelectorAll(".eventlist div").forEach((event) => {
+      event.style.color = "";
+      event.style.background = "";
+      event.style.border = "";
+    })
 
     document.querySelectorAll(".member").forEach((member) => {
       member.style.background = "";
