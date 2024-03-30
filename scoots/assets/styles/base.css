@@ -1,0 +1,81 @@
+body {
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  display: none;
+  color: black;
+}
+
+.active{
+    background-color: lightskyblue;
+}
+
+#menu {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: black;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❌";
+}
+
+.open a {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  background-color: lightsteelblue;
+  /* border: 1px solid black; */
+  /* border-radius: 20px; */
+}
+
+.open a:hover {
+  background-color: lightblue;
+}
+
+main{
+    gap: 50px;
+}
+
+main div{
+    border: 1px solid black;    
+}
+
+.weather{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: none;
+    gap: 10px;
+}
+
+.card{
+    background-color: azure;
+}
+
+
+.card-body img{
+    background-color: lightgrey;
+}
+
+
+/* footer {
+
+} */

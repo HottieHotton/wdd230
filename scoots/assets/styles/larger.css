@@ -1,0 +1,73 @@
+@media screen and (min-width: 1000px) {
+    header{
+        font-size: 1.3rem;
+    }
+    
+    nav{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    nav a{
+        display: block;
+        padding: 10px;
+        margin: 5px 5px 5px 5px;
+        background-color: lightsteelblue;
+        border: 1px solid black;
+        border-radius: 20px;
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+    }
+    
+    nav a:hover{
+        background-color: lightblue;
+    }
+    
+    .active{
+        background-color: lightskyblue;
+    }
+
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+    
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+    
+    main div{
+        border: 1px solid black;
+        border-radius: 25px;
+        
+    }
+    
+    .sneak-rental{
+        grid-column: 1/-1;
+    }
+
+
+
+
+
+
+
+    .weather{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: none;
+        gap: 10px;
+    }
+
+    .card{
+        background-color: azure;
+    }
+
+    .card-body img{
+        background-color: lightgrey;
+    }
+
+
+}
