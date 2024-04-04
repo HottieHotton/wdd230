@@ -1,6 +1,3 @@
-//20.42294598332945, -86.91099951723233
-//lat=20.42&lon=-86.91
-
 const key="a7799dc19c21fbac507f0d66fec055f8";
 const url=`https://api.openweathermap.org/data/2.5/forecast?lat=20.42&lon=-86.91&appid=${key}&units=imperial`;
 const currenturl=`https://api.openweathermap.org/data/2.5/weather?lat=20.42&lon=-86.91&appid=${key}&units=imperial`;
@@ -21,8 +18,18 @@ function displayResults(data, day) {
               </section>
           </div>
       `;
+
+    const max = Math.round(day.main.temp_max);
+    const p = document.querySelector(".banner p");
+    if(max > 70){
+        p.textContent += `${max}! Have a wonderful day!`;
+    }else if(max > 50 && max < 70){
+        p.textContent += `${max}! Don't forget your jacket!`;
+    }else if(max < 50){
+        p.textContent += `${max}! Don't forget your hot chocolate!`;
+    }
   
-    const filteredData = data.list.filter(item => item.dt_txt.includes("21:00:00")).slice(0, 3);
+    const filteredData = data.list.filter(item => item.dt_txt.includes("21:00:00")).slice(0, 5);
     filteredData.forEach(dayData => {
       const date = new Date(dayData.dt_txt);
       const dayOfWeek = date.toLocaleString('en-US', { timeZone: 'America/Cancun' , weekday: 'short'});
@@ -55,5 +62,12 @@ function displayResults(data, day) {
           console.log(error);
       }
   }
+
+  const banner = document.querySelector('.banner');
+  const closeBannerBtn = document.getElementById('closeBanner');
+
+  closeBannerBtn.addEventListener('click', () => {
+    banner.style.display = 'none';
+  });
   
   apiFetch();

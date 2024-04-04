@@ -16,8 +16,8 @@ nav a {
   color: black;
 }
 
-.active{
-    background-color: lightskyblue;
+.active {
+  background-color: lightskyblue;
 }
 
 #menu {
@@ -27,7 +27,6 @@ nav a {
   color: black;
   position: absolute;
   right: 0.5rem;
-  top: 0.5rem;
 }
 
 #menu::before {
@@ -51,30 +50,43 @@ nav a {
   background-color: lightblue;
 }
 
-main{
-    gap: 50px;
+main {
+  gap: 50px;
 }
 
-main div{
-    border: 1px solid black;    
+main div {
+  border: 1px solid black;
 }
 
-.weather{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    border: none;
-    gap: 10px;
+.weather {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  border: none;
+  gap: 10px;
 }
 
-.card{
-    background-color: azure;
+.card {
+  background-color: azure;
 }
 
-
-.card-body img{
-    background-color: lightgrey;
+.card-body img {
+  background-color: lightgrey;
 }
 
+.banner {
+  display: flex;
+  justify-content: center;
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+}
+
+#closeBanner {
+  background-color: transparent;
+  border: none;
+  color: #721c24;
+  font-size: 1rem;
+}
 
 /* footer {
 

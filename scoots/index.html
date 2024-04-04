@@ -12,8 +12,13 @@
 </head>
 
 <body>
+    <div class="banner">
+        <p>The high for today is </p>
+        <button id="closeBanner">❌</button>
+    </div>
     <header>
         <button id="menu">Menu</button>
+        <img src="assets/images/Scoots_transparent.webp" alt="Logo" loading="lazy" width="100" height="100">
         <h1>Scoots - The True Ride</h1>
     </header>
     <nav>
@@ -23,9 +28,41 @@
         <a href="./contact.html">Contact Us!</a>
     </nav>
     <main>
-        <div>
+        <div class="about">
             <h2>About Us</h2>
+            <img src="assets/images/Scoots_transparent.webp" alt="Logo" loading="lazy" width="400" height="400">
+            <h3>
+                Welcome to Scoots, your premier motor scooter rental company on the stunning island of Cozumel in the
+                western Caribbean Sea. As a locally-owned and operated business, we are dedicated to providing top-notch
+                rental services to a diverse range of customers, including locals, walk-in tourists, motor scooter
+                enthusiasts, and cruise-based touring groups and partnerships.
+            </h3>
+            <hr>
+            <h3>
+                With two convenient physical rental locations, we make it easy for you to explore Cozumel's beauty on
+                two wheels or four. Our main location near the Playa del Carmen-Cozumel Ferry dock in el Centro de
+                Cozumel caters to all travelers, while our second location near the Terminal Puerta Maya is ideal for
+                cruise line passengers and patrons.
+            </h3>
+            <img src="assets/images/rental-examples.webp" alt="Rentals" loading="lazy" width="400" height="225">
+            <h3>
+                At Scoots, we pride ourselves on offering friendly and hassle-free rental experiences for motor
+                scooters, jeeps, and side-by-side ATVs. Whether you're looking to zip around the island solo or embark
+                on an adventure with friends and family, we have the perfect rental options for you.
+            </h3>
+            <hr>
+            <h3>
+                Our website serves as a gateway to our services, providing essential information about our offerings,
+                rental process, and requirements. We invite you to explore Cozumel's hidden gems and escape the touristy
+                western part of the island by discovering the vast coasts and inlets on the southern and eastern shores.
+            </h3>
+            <img src="assets/images/cozumel-port-sign.webp" alt="Cozumel Sign" loading="lazy" width="400" height="300">
+            <h3>
+                Join us at Scoots for an unforgettable island experience filled with fun, freedom, and exploration.
+                Let's make your Cozumel journey an adventure to remember!
+            </h3>
         </div>
+        
         <div>
             <h2>Weather</h2>
             <div class="weather"></div>
@@ -35,7 +72,8 @@
         </div>
     </main>
     <footer>
-
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
     </footer>
     <script src="assets/scripts/script.js"></script>
     <script src="assets/scripts/weather.js"></script>

@@ -1,6 +1,13 @@
 @media screen and (min-width: 1000px) {
     header{
         font-size: 1.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header img{
+        vertical-align: middle;
     }
     
     nav{
@@ -43,6 +50,16 @@
         border-radius: 25px;
         
     }
+
+    .about{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about:first-child{
+        display: block;
+    }
     
     .sneak-rental{
         grid-column: 1/-1;
@@ -56,9 +73,9 @@
 
     .weather{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         border: none;
-        gap: 10px;
+        gap: 100px;
     }
 
     .card{
