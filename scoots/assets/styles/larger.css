@@ -1,90 +1,183 @@
 @media screen and (min-width: 1000px) {
-    header{
-        font-size: 1.3rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  header {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    header img{
-        vertical-align: middle;
-    }
-    
-    nav{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-    nav a{
-        display: block;
-        padding: 10px;
-        margin: 5px 5px 5px 5px;
-        background-color: lightsteelblue;
-        border: 1px solid black;
-        border-radius: 20px;
-        text-decoration: none;
-        color: black;
-        font-size: 1.5rem;
-    }
-    
-    nav a:hover{
-        background-color: lightblue;
-    }
-    
-    .active{
-        background-color: lightskyblue;
-    }
+  header img {
+    vertical-align: middle;
+  }
 
-    #menu {
-        display: none; /* hide hamburger button */
-    }
-    
-    main{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
-    }
-    
-    main div{
-        border: 1px solid black;
-        border-radius: 25px;
-        
-    }
+  nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-    .about{
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(2, 1fr);
-    }
+  nav a {
+    display: block;
+    padding: 10px;
+    margin: 5px 5px 5px 5px;
+    background-color: lightsteelblue;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+  }
 
-    .about:first-child{
-        display: block;
-    }
-    
-    .sneak-rental{
-        grid-column: 1/-1;
-    }
+  nav a:hover {
+    background-color: lightblue;
+  }
 
+  .active {
+    background-color: lightskyblue;
+  }
 
+  #menu {
+    display: none; /* hide hamburger button */
+  }
 
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
 
+  main div {
+    border: 1px solid black;
+    border-radius: 25px;
+  }
 
+  .about {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .about:first-child {
+    display: block;
+  }
 
-    .weather{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        border: none;
-        gap: 100px;
-    }
+  .sneak-rental {
+    grid-column: 1/-1;
+  }
 
-    .card{
-        background-color: azure;
-    }
+  .weather {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border: none;
+    gap: 100px;
+  }
 
-    .card-body img{
-        background-color: lightgrey;
-    }
+  .card {
+    background-color: azure;
+  }
 
+  .card-body img {
+    background-color: lightgrey;
+  }
 
+  .rentalPage {
+    display: block;
+    justify-content: center;
+  }
+
+  .rentals {
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  .rental {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(213, 234, 252);
+    margin: 10px 10px;
+  }
+
+  .reserve{
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: none;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .rental-agreement {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: lightcyan;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .reservation-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: lightgrey;
+  }
+
+  form {
+    display: grid;
+    gap: 10px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 25%;
+  }
+
+  .reservation-form input:required {
+    border: 2px solid red;
+  }
+
+  .reservation-form input:required:valid {
+    border: 1px solid black;
+  }
+
+  .reservation-form select:required {
+    border: 2px solid red;
+  }
+  
+  .reservation-form select:required:valid {
+    border: 1px solid black;
+  }
+
+  button {
+    padding: 10px;
+    background-color: #79aee6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    min-width: 400px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
 }
