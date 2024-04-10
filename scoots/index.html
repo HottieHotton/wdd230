@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/styles/base.css">
     <link rel="stylesheet" href="assets/styles/medium.css">
     <link rel="stylesheet" href="assets/styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -62,8 +63,8 @@
                 Let's make your Cozumel journey an adventure to remember!
             </h3>
         </div>
-        
-        <div>
+
+        <div class="weatherdiv">
             <h2>Weather</h2>
             <div class="weather"></div>
         </div>
@@ -72,11 +73,25 @@
         </div>
     </main>
     <footer>
-        <p id="copyright"></p>
-        <p id="lastModified"></p>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:info@scootscozumel.com">info@scootscozumel.com</a></p>
+            <p>Phone: <a href="tel:+1-123-456-7890">+1-123-456-7890</a></p>
+        </div>
+        <div class="social-media">
+            <h3>Social Media</h3>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="copyright">
+            <p id="copyright"></p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
     <script src="assets/scripts/script.js"></script>
     <script src="assets/scripts/weather.js"></script>
+    <script src="assets/scripts/json.js"></script>
 </body>
 
 </html>

@@ -28,7 +28,7 @@ function displayResults(data, day) {
     }else if(max < 50){
         p.textContent += `${max}! Don't forget your hot chocolate!`;
     }
-  
+    
     const filteredData = data.list.filter(item => item.dt_txt.includes("21:00:00")).slice(0, 5);
     filteredData.forEach(dayData => {
       const date = new Date(dayData.dt_txt);

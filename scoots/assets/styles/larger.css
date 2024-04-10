@@ -62,6 +62,23 @@
 
   .sneak-rental {
     grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    grid-gap: 20px; /* Adjust the gap between divs as needed */
+  }
+  
+  .sneak-rental > h2 {
+    grid-column: 1/-1; /* Span across both columns */
+  }
+  
+  .sneak-rental > div {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(223, 245, 252);
+  }
+
+  .sneak-rental > div img{
+    margin: 0 auto;
   }
 
   .weather {
@@ -77,6 +94,11 @@
 
   .card-body img {
     background-color: lightgrey;
+  }
+
+  footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .rentalPage {
@@ -164,10 +186,10 @@
     border: 1px solid black;
   }
 
-  button {
+  .submit {
     padding: 10px;
-    background-color: #79aee6;
-    color: #fff;
+    background-color: #aabbce;
+    color: black;
     border: none;
     cursor: pointer;
     border-radius: 20px;
@@ -177,7 +199,7 @@
     margin-right: auto;
   }
 
-  button:hover {
-    background-color: #0056b3;
+  .submit:hover {
+    background-color: #5092da;
   }
 }
