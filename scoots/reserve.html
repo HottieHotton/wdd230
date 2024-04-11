@@ -52,58 +52,55 @@
             <div class="reservation-form">
                 <h2>Reservation Form</h2>
                 <form method="get" action="thankyou.html" target="_blank">
-                    <form>
-                        <label for="date">Date:</label>
-                        <input type="date" id="date" name="date" required>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
 
-                        <label for="period">Rental Period:</label>
-                        <input type="text" id="period" name="period" placeholder="e.g., 1 week, 2 days, etc." required>
+                    <label for="period">Rental Period:</label>
+                    <input type="text" id="period" name="period" placeholder="e.g., 1 week, 2 days, etc." required>
 
-                        <label for="rental-type">Rental Type:</label>
-                        <select id="rental-type" name="rental-type" required>
-                            <option value="">Select Rental Type</option>
-                            <optgroup label="Honda Motor Scooters">
-                                <option value="honda-metropolitan">Honda Metropolitan (49cc) - 1 person</option>
-                                <option value="honda-dio">Honda Dio (110cc) - 2 person</option>
-                                <option value="honda-pcx150">Honda PCX150 (149cc) - 2 person</option>
-                            </optgroup>
-                            <optgroup label="Side-by-Side ATVs">
-                                <option value="honda-pioneer-1000">Honda Pioneer 1000 - 4 person</option>
-                            </optgroup>
-                            <optgroup label="Jeeps">
-                                <option value="jeep-wrangler-4-door">Jeep Wrangler - 4 door manual with A/C - 5 person
-                                </option>
-                                <option value="jeep-wrangler-2-door">Jeep Wrangler - 2 door - open air - manual - 4
-                                    person</option>
-                            </optgroup>
-                        </select>
+                    <label for="rental-type">Rental Type:</label>
+                    <select id="rental-type" name="rental-type" required>
+                        <option value="">Select Rental Type</option>
+                        <optgroup label="Honda Motor Scooters">
+                            <option value="honda-metropolitan">Honda Metropolitan (49cc) - 1 person</option>
+                            <option value="honda-dio">Honda Dio (110cc) - 2 person</option>
+                            <option value="honda-pcx150">Honda PCX150 (149cc) - 2 person</option>
+                        </optgroup>
+                        <optgroup label="Side-by-Side ATVs">
+                            <option value="honda-pioneer-1000">Honda Pioneer 1000 - 4 person</option>
+                        </optgroup>
+                        <optgroup label="Jeeps">
+                            <option value="jeep-wrangler-4-door">Jeep Wrangler - 4 door manual with A/C - 5 person
+                            </option>
+                            <option value="jeep-wrangler-2-door">Jeep Wrangler - 2 door - open air - manual - 4
+                                person</option>
+                        </optgroup>
+                    </select>
 
 
-                        <label for="number">Number of Rentals:</label>
-                        <input type="number" id="number" name="number" min="1" required>
+                    <label for="number">Number of Rentals:</label>
+                    <input type="number" id="number" name="number" min="1" required>
 
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                            placeholder="123-456-7890" required>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="123-456-7890" required>
 
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" name="name" required>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-                        <label for="home-state">Home State or Country:</label>
-                        <input type="text" id="home-state" name="home-state" required>
+                    <label for="home-state">Home State or Country:</label>
+                    <input type="text" id="home-state" name="home-state" required>
 
-                        <label for="cruise-line">Cruise Line (if applicable):</label>
-                        <input type="text" id="cruise-line" name="cruise-line">
+                    <label for="cruise-line">Cruise Line (if applicable):</label>
+                    <input type="text" id="cruise-line" name="cruise-line">
 
-                        <label for="comments">Special Accommodations/Comments:</label>
-                        <textarea id="comments" name="comments" rows="4"></textarea>
+                    <label for="comments">Special Accommodations/Comments:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
 
-                        <button class="submit" type="submit">Submit</button>
-                    </form>
-
+                    <button class="submit" type="submit">Submit</button>
                 </form>
             </div>
         </div>
