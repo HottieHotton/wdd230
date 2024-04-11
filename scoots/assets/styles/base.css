@@ -114,11 +114,17 @@ main div {
   margin-bottom: 20px
 }
 
-.footer {
+footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  background-color: lightgray;
+}
+
+.contact-info a{
+  color: black;
+  text-decoration: none;
 }
 
 .contact-info,
@@ -157,6 +163,26 @@ main div {
 .fa-instagram {
   background: #125688;
   color: white;
+}
+
+.rentalPage {
+  display: block;
+  justify-content: center;
+}
+
+.rentals {
+  border: none;
+  display: grid;
+  justify-content: center;
+}
+
+.rental {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(213, 234, 252);
+  margin: 10px 10px;
 }
 
 .container {
@@ -232,4 +258,40 @@ textarea {
 
 .submit:hover {
   background-color: #5092da;
+}
+
+.thanks{
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+
+.contact-form form{
+  margin-bottom: 20px;
+}
+
+.contact > div{
+  margin-bottom: 20px;
+}
+
+.contactButton{
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #aabbce;
+}
+
+.contactButton:hover {
+  background-color: #5092da;
+  cursor: pointer;
+}
+
+.maps iframe{
+  border-radius: 20px;
+  border: none;
+  width: 90%;
+}
+
+.contact img{
+  display: none;
 }

@@ -4,15 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots - Your Way Around The Island</title>
+    <title>Scoots - Contact Us!</title>
+    <meta name="author" content="Braxton Hotton">
+    <meta name="description" content="This is the Scoots Website that I built for WDD230.">
+    <meta property="og:title" content="Braxton Hotton - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hottiehotton.github.io/wdd230/scoots">
+    <meta property="og:image" content="assets/images/Scoots_transparent.webp">
     <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/base.css">
     <link rel="stylesheet" href="assets/styles/medium.css">
     <link rel="stylesheet" href="assets/styles/larger.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
+        <button id="menu">Menu</button>
         <img src="assets/images/Scoots_transparent.webp" alt="Logo" loading="lazy" width="100" height="100">
         <h1>Scoots - Contact Us!</h1>
     </header>
@@ -22,12 +31,46 @@
         <a href="./reserve.html">Reserve</a>
         <a class="active" href="./contact.html">Contact Us!</a>
     </nav>
-    <main>
-
-    </main>
+    <main class="contact">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form method="get" action="contactThanks.html" target="_blank">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+        
+                <button class="contactButton" type="submit">Submit</button>
+            </form>
+            <img src="assets/images/Scoots_transparent.webp" alt="Logo" loading="lazy" width="400" height="400">
+        </div>
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d555.0918662641469!2d-87.07523835425245!3d20.620781285586734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%20Playa%20del%20Carmen-Cozumel%20Ferry%20dock%20in%20el%20Centro%20de%20Cozumel!5e0!3m2!1sen!2sus!4v1712798233560!5m2!1sen!2sus" width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d785.7607602625625!2d-86.97459176540404!3d20.476314875193438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1712798428757!5m2!1sen!2sus" width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </main>
     <footer>
-
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:info@scootscozumel.com">info@scootscozumel.com</a></p>
+            <p>Phone: <a href="tel:+1-123-456-7890">+1-123-456-7890</a></p>
+        </div>
+        <div class="social-media">
+            <h3>Social Media</h3>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="copyright">
+            <p id="copyright"></p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
+    <script src="assets/scripts/script.js"></script>
 </body>
 
 </html>

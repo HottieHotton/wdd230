@@ -202,4 +202,10 @@
   .submit:hover {
     background-color: #5092da;
   }
+
+  .contact img{
+    display: block;
+    margin: 0 auto;
+
+  }
 }

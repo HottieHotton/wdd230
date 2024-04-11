@@ -4,11 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots - Your Way Around The Island</title>
+    <title>Scoots - Reserve Your Ride!</title>
+    <meta name="author" content="Braxton Hotton">
+    <meta name="description" content="This is the Scoots Website that I built for WDD230.">
+    <meta property="og:title" content="Braxton Hotton - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hottiehotton.github.io/wdd230/scoots">
+    <meta property="og:image" content="assets/images/Scoots_transparent.webp">
     <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/base.css">
     <link rel="stylesheet" href="assets/styles/medium.css">
     <link rel="stylesheet" href="assets/styles/larger.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -43,7 +51,7 @@
             </div>
             <div class="reservation-form">
                 <h2>Reservation Form</h2>
-                <form>
+                <form method="get" action="thankyou.html" target="_blank">
                     <form>
                         <label for="date">Date:</label>
                         <input type="date" id="date" name="date" required>
@@ -101,8 +109,21 @@
         </div>
     </main>
     <footer>
-        <p id="copyright"></p>
-        <p id="lastModified"></p>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:info@scootscozumel.com">info@scootscozumel.com</a></p>
+            <p>Phone: <a href="tel:+1-123-456-7890">+1-123-456-7890</a></p>
+        </div>
+        <div class="social-media">
+            <h3>Social Media</h3>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="copyright">
+            <p id="copyright"></p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
     <script src="assets/scripts/script.js"></script>
 </body>
